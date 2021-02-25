@@ -18,7 +18,7 @@ public:
         const int MM = 100000;
         for(int i=0; i<MM; i++)
             for(int j=0; j<MM; j++);  
-        return 0;  
+        return 0;
     }
 };  
   
@@ -40,8 +40,7 @@ int main() {
 
     while(1) {  
         printf("there are still %d tasks need to process\n", threadPool.size());  
-        if (threadPool.size() == 0)
-        {  
+        if (threadPool.size() == 0) {  
             threadPool.stop();
             printf("Now I will exit from main\n"); 
             exit(0);   
